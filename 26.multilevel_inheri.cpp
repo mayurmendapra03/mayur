@@ -4,11 +4,11 @@ using namespace std;
 class student
 {
     private:
-    int rl;
-    char nm[20];
+       int rl;
+      char nm[20];
     public:
-    void read();
-    void display();
+        void read();
+     void display();
 };
 class marks : public student
 {
