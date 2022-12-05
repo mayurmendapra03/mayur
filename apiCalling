@@ -1,0 +1,11 @@
+usdrated			= 	https://open.er-api.com/v6/latest/USD
+
+import 'package:http/http.dart' as http;
+
+Future<Usdrate?> getusd() async{
+    var response = await http.get(Uri.parse('https://open.er-api.com/v6/latest/USD'));
+    if(response.statusCode==200){
+      uds=usdrateFromJson(response.body);
+      return uds;
+    }
+}
